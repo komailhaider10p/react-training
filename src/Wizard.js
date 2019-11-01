@@ -10,7 +10,7 @@ export default class Wizard extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            step: 1,
+            currentStep: 1,
             totalSteps: 3,
         };
     }
@@ -18,16 +18,16 @@ export default class Wizard extends React.Component {
         let steps = [];
         for (var i = 1; i < this.state.totalSteps + 1; i++) {
             steps.push(
-                <StepButton key={i} value={i} disabled={i !== this.state.step}/>
+                <StepButton key={i} value={i} disabled={i !== this.state.currentStep}/>
             )
         }
         return steps;
     }
     Form = () => {
         return <div>
-            <PersonForm hidden={this.state.step !== 1}></PersonForm>
-            <EmploymentForm hidden={this.state.step !== 2}></EmploymentForm>
-            <ProjectForm hidden={this.state.step !== 3}></ProjectForm>
+            <PersonForm hidden={this.state.currentStep !== 1}></PersonForm>
+            <EmploymentForm hidden={this.state.currentStep !== 2}></EmploymentForm>
+            <ProjectForm hidden={this.state.currentStep !== 3}></ProjectForm>
         </div>
     }
     render() {
@@ -37,8 +37,8 @@ export default class Wizard extends React.Component {
                     {this.createSteps()}
                 </ButtonGroup>
                 {this.Form()}
-                <NavigationButtons totalSteps={this.state.totalSteps} clickHandler={currentStep => {
-                    this.setState({ step: currentStep });
+                <NavigationButtons totalSteps={this.state.totalSteps} currentStep={this.state.currentStep} clickHandler={currentStep => {
+                    this.setState({ currentStep: currentStep });
                   }}></NavigationButtons>
             </div>
         )
