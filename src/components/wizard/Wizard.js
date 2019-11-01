@@ -2,7 +2,7 @@ import React from 'react';
 import ButtonGroup from '@material-ui/core/ButtonGroup';
 import StepButton from './StepButton';
 import PersonForm from './PersonForm';
-import EmploymentForm from './EmploymentForm';
+import EmploymentForm from '../../EmploymentForm';
 import ProjectForm from './ProjectForm';
 import NavigationButtons from './NavigationButtons';
 
