@@ -19,6 +19,7 @@ class EmployeeInfo extends React.Component {
                             myData.data.map((item, index) => {
                                 return item.category == category ? <Person 
                                 image={item.picture} 
+                                key={index}
                                 name={item.name} 
                                 designation='Software Engineer' /> : ''
                               })
