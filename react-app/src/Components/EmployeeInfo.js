@@ -1,12 +1,11 @@
 import React from 'react'
 import Tabs from './Tabs/Tabs'
 import Person from './Person/Person'
-import myData from '../employees.json';
-import uniqBy from 'lodash/uniqueId'
+import EmployeeData from '../employees.json';
 
 class EmployeeInfo extends React.Component {
 
-    categories = [...new Set(myData.data.map(item => item.category))];
+    categories = [...new Set(EmployeeData.data.map(item => item.category))];
 
     render() {
 
@@ -16,7 +15,7 @@ class EmployeeInfo extends React.Component {
                 this.categories.map((category, index) => {
                    return <div key={index} tabName={category}>
                         {
-                            myData.data.map((item, index) => {
+                            EmployeeData.data.map((item, index) => {
                                 return item.category == category ? <Person 
                                 image={item.picture} 
                                 key={index}
