@@ -1,5 +1,5 @@
 import React from "react";
-
+import '../../App.css';
 export default class Home extends React.Component {
   constructor(props) {
     super(props);
@@ -10,31 +10,71 @@ export default class Home extends React.Component {
 
   render() {
     return (
-      <div>
-        <h2> Home </h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Fermentum
-          leo vel orci porta non pulvinar. Massa id neque aliquam vestibulum.
-          Dictum at tempor commodo ullamcorper a lacus vestibulum sed arcu.
-          Blandit aliquam etiam erat velit scelerisque in dictum. Dignissim
-          suspendisse in est ante in nibh. Vestibulum lectus mauris ultrices
-          eros. Dapibus ultrices in iaculis nunc. Laoreet non curabitur gravida
-          arcu ac tortor. Nulla posuere sollicitudin aliquam ultrices sagittis
-          orci a. Egestas fringilla phasellus faucibus scelerisque. Egestas
-          egestas fringilla phasellus faucibus. Odio eu feugiat pretium nibh.
-          Dui nunc mattis enim ut. Rhoncus mattis rhoncus urna neque viverra
-          justo nec. Dictum at tempor commodo ullamcorper a lacus vestibulum.
-          Cras fermentum odio eu feugiat pretium. Nibh tortor id aliquet lectus
-          proin nibh nisl. Nulla facilisi etiam dignissim diam quis. Lacus sed
-          viverra tellus in. Tristique magna sit amet purus gravida. Amet justo
-          donec enim diam vulputate ut pharetra. Tortor aliquam nulla facilisi
-          cras fermentum. Purus sit amet volutpat consequat mauris nunc congue.
-          Urna nec tincidunt praesent semper feugiat nibh sed pulvinar.
-          Imperdiet dui accumsan sit amet nulla facilisi morbi. Sapien eget mi
-          proin sed libero enim sed faucibus. Sit amet facilisis magna etiam
-          tempor orci eu lobortis.
-        </p>
+      <div className="container">
+        <div className="row profile">
+          <div className="col-md-3">
+            <div className="profile-sidebar">
+              <div className="profile-userpic">
+                <img
+                  src="http://keenthemes.com/preview/metronic/theme/assets/admin/pages/media/profile/profile_user.jpg"
+                  className="img-responsive"
+                  alt=""
+                />
+              </div>
+              <div className="profile-usertitle">
+                <div className="profile-usertitle-name">Marcus Doe</div>
+                <div className="profile-usertitle-job">Developer</div>
+              </div>
+              <div className="profile-userbuttons">
+                <button type="button" className="btn btn-success btn-sm">
+                  Follow
+                </button>
+                <button type="button" className="btn btn-danger btn-sm">
+                  Message
+                </button>
+              </div>
+              <div className="profile-usermenu">
+                <ul className="nav">
+                  <li className="active">
+                    <a href="#">
+                      <i className="glyphicon glyphicon-home"></i>
+                      Overview{" "}
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i className="glyphicon glyphicon-user"></i>
+                      Account Settings{" "}
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank">
+                      <i className="glyphicon glyphicon-ok"></i>
+                      Tasks{" "}
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i className="glyphicon glyphicon-flag"></i>
+                      Help{" "}
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div className="col-md-9">
+            <div className="profile-content">
+              <p></p>
+              <ul>
+                <li>Three-year background in diverse facets of .NET development, encompassing analysis, design, development, and execution of business applications.</li>
+                <li>In-depth knowledge of various platforms, software systems, and servers.</li>
+                <li>Extensive programming experience using ASP.NET 2.0, VB.NET, HTML, and XML.</li>
+                <li>Excellent communication skills with strong background working directly with coworkers and clientele to identify business objectives and establish requirements.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     );
   }

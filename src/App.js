@@ -4,7 +4,6 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Wizard from "./components/wizard/Wizard";
 import Life from "./components/life/Life";
 import Home from "./components/home/Home";
-import Profile from "./components/profile/Profile";
 
 function App() {
   return (
@@ -26,15 +25,6 @@ function App() {
                 to="/"
               >
                 Home
-              </Link>
-              <Link
-                className="nav-link"
-                role="tab"
-                aria-selected="false"
-                data-toggle="pill"
-                to="/profile"
-              >
-                Profile
               </Link>
               <Link
                 className="nav-link"
@@ -67,9 +57,6 @@ function App() {
                 </Route>
                 <Route path="/">
                   <Home />
-                </Route>
-                <Route path="/profile">
-                  <Profile />
                 </Route>
               </Switch>
             </div>
