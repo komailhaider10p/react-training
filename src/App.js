@@ -9,6 +9,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import Wizard from './components/wizard/Wizard';
 import Life from './components/life/Life';
+import LifeHoc from './components/lifeHoc/LifeHoc';
 
 
 class App extends Component {
@@ -25,13 +26,19 @@ class App extends Component {
                 <li>
                   <Link to="/life">Life at 10Pearls</Link>
                 </li>
+                <li>
+                  <Link to="/life-hoc">Life at 10P with HOC</Link>
+                </li>
               </ul>
             </nav>
 
             <Switch>
+              <Route path="/life-hoc">
+                <LifeHoc />
+              </Route> 
               <Route path="/life">
                 <Life />
-              </Route>
+              </Route>            
               <Route path="/">
                 <Wizard />
               </Route>
