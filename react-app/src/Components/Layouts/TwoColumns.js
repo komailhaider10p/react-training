@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Navigation from '../NavMenu/NavMenu';
+import Navigation from '../NavMenu/_NavMenu';
 
 class TwoColumns extends Component {
     render() {

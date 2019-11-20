@@ -106,7 +106,7 @@ class Tabs extends Component {
                                 return (
                                     <TabContent key={index}
                                         show={index == this.state.activeTabIndex}
-                                        tabContent={this.props.children[index].props.children} />
+                                        tabContent={child} />
 
                                 );
                             })

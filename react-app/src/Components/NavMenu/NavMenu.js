@@ -1,20 +1,40 @@
-import React, { Component } from 'react'
+import React from 'react';
+import ListItem from '@material-ui/core/ListItem';
+import ListItemIcon from '@material-ui/core/ListItemIcon';
+import DashboardIcon from '@material-ui/icons/Dashboard';
+
 import { Link } from 'react-router-dom';
 
-class Navigation extends Component {
+export const mainListItems = (
+  <div>
+      
+    <ListItem button>
+      <ListItemIcon>
+        <DashboardIcon />
+      </ListItemIcon>
+      <Link exact='true' to="/">Home</Link>
+    </ListItem>
 
-    render() {
-        return (
-            <div className='navbar'>
-                <ul>
-                    <li><Link to="/">Home</Link></li>
-                    <li><Link to="/wizard">Form Wizard</Link></li>
-                    <li><Link to="/tabs">Tabs</Link></li>
-                </ul>
-            </div>
-        );
-    }
-}
+    <ListItem button>
+      <ListItemIcon>
+      <DashboardIcon />
+      </ListItemIcon>
+      <Link to="wizard">FormWizard</Link>
+    </ListItem>
 
-export default Navigation;
+    <ListItem button>
+      <ListItemIcon>
+      <DashboardIcon />
+      </ListItemIcon>
+      <Link to="tabs">EmployeeInfo</Link>
+    </ListItem>
 
+    <ListItem button>
+      <ListItemIcon>
+      <DashboardIcon />
+      </ListItemIcon>
+      <Link to="github-issues">Github Issues</Link>
+    </ListItem>
+    
+  </div>
+);
