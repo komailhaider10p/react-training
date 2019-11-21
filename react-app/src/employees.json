@@ -1,0 +1,60 @@
+{
+    "data": [
+        {
+            "id": 9654,
+            "type": "employee-up-coming-news",
+            "name": "Muhammad Jamal Ashraf",
+            "date": "2019-10-07T00:00:00",
+            "category": "New Joiners",
+            "picture": "https://cogs.10pearls.com:443/cogsapi/user_images/9654.png"
+        },
+        {
+            "id": 9655,
+            "type": "employee-up-coming-news",
+            "name": "Zawar Ahmed Tahir",
+            "date": "2019-10-07T00:00:00",
+            "category": "Anniversary",
+            "picture": "https://cogs.10pearls.com:443/cogsapi/user_images/9655.png"
+        },
+        {
+            "id": 9667,
+            "type": "employee-up-coming-news",
+            "name": "Vashdev Heerani",
+            "date": "2019-10-14T00:00:00",
+            "category": "Birthday",
+            "picture": "https://cogs.10pearls.com:443/cogsapi/user_images/9667.png"
+        },
+        {
+            "id": 9668,
+            "type": "employee-up-coming-news",
+            "name": "Syed Hassan Anwer",
+            "date": "2019-10-14T00:00:00",
+            "category": "Anniversary",
+            "picture": "https://cogs.10pearls.com:443/cogsapi/user_images/9668.png"
+        },
+        {
+            "id": 10668,
+            "type": "employee-up-coming-news",
+            "name": "Adnan",
+            "date": "2019-10-14T00:00:00",
+            "category": "Birthday",
+            "picture": "https://cogs.10pearls.com:443/cogsapi/user_images/9668.png"
+        },
+        {
+            "id": 10684,
+            "type": "employee-up-coming-news",
+            "name": "Taimoor Shakeel",
+            "date": "2019-10-21T00:00:00",
+            "category": "New Joiners",
+            "picture": "https://cogs.10pearls.com:443/cogsapi/user_images/10684.png"
+        },
+        {
+            "id": 10686,
+            "type": "employee-up-coming-news",
+            "name": "Abdul Basit",
+            "date": "2019-10-21T00:00:00",
+            "category": "New Joiners",
+            "picture": "https://cogs.10pearls.com:443/cogsapi/user_images/10686.png"
+        }
+    ]
+}
