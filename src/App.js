@@ -10,6 +10,7 @@ import './App.css';
 import Wizard from './components/wizard/Wizard';
 import Life from './components/life/Life';
 import LifeHoc from './components/lifeHoc/LifeHoc';
+import GithubSearchHook from './components/githubSearchHook/GithubSearchHook';
 
 
 class App extends Component {
@@ -29,10 +30,16 @@ class App extends Component {
                 <li>
                   <Link to="/life-hoc">Life at 10P with HOC</Link>
                 </li>
+                <li>
+                  <Link to="/github-search-hooks">GitHub search with Hooks</Link>
+                </li>
               </ul>
             </nav>
 
             <Switch>
+            <Route path="/github-search-hooks">
+                <GithubSearchHook />
+              </Route> 
               <Route path="/life-hoc">
                 <LifeHoc />
               </Route> 
